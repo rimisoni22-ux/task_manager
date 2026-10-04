@@ -1,0 +1,818 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3dc387;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.priotityColors {
+  height: 60%;
+  width: 30%;
+  background-color: #f6f4e8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.color {
+  height: 60%;
+  width: 20%;
+  border-radius: 10px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.options {
+  height: 60%;
+  width: 10%;
+  background-color: #f6f4e8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+.taskContainer {
+  background-color: #e5d994;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+.ticket {
+  margin: 10px;
+  height: 35vh;
+  width: 15%;
+  border: 0.1px solid rgb(164, 162, 162);
+  background-color: #e5eee4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.taskColor {
+  height: 10%;
+  width: 100%;
+}
+.ticketTaskContainer {
+  /* background-color: blue; */
+  padding: 5px;
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+.lockContainer {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.taskAdder {
+  height: 40vh;
+  width: 35vw;
+  background-color: #c0e1d2;
+  position: fixed;
+  top: 20vh;
+  left: 30vw;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.taskText {
+  resize: none;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 80%;
+  background-color: white;
+
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.priotityColors2 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.color2 {
+  height: 15%;
+  width: 80%;
+  border-radius: 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family:
+        "Poppins",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: #29263d;
+
+    background: #f8f6f1;
+}
+
+
+
+
+nav {
+    height: 11vh;
+    min-height: 75px;
+
+    width: 100%;
+
+    padding: 10px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: #4b4e8a;
+
+    box-shadow:
+        0 5px 18px
+        rgba(45, 43, 80, 0.18);
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+
+
+.logo {
+    color: #fffdf7;
+
+    font-size: 1.9rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 2px 4px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+
+.priotityColors {
+    height: 58%;
+
+    width: 30%;
+
+    max-width: 360px;
+
+    padding: 5px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    background: #fffdf7;
+
+    border: 1px solid #e5e1d7;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(45, 43, 80, 0.12);
+}
+
+
+
+
+.color {
+    height: 62%;
+
+    width: 18%;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.color:hover {
+    transform:
+        translateY(-3px)
+        scale(1.05);
+
+    box-shadow:
+        0 5px 10px
+        rgba(45, 43, 80, 0.2);
+}
+
+
+
+
+.red {
+    background: #e76f6f;
+}
+
+.blue {
+    background: #7189d4;
+}
+
+.green {
+    background: #69a982;
+}
+
+.orange {
+    background: #e6a15c;
+}
+
+
+
+
+.options {
+    height: 58%;
+
+    width: 12%;
+
+    min-width: 110px;
+
+    display: flex;
+
+    justify-content:
+        space-around;
+
+    align-items: center;
+
+    background: #fffdf7;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(45, 43, 80, 0.12);
+}
+
+
+
+
+.options svg {
+    color: #4b4e8a;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.options svg:hover {
+    transform: scale(1.18);
+
+    color: #d95d68;
+}
+
+
+
+
+.taskContainer {
+
+    min-height: 89vh;
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content:
+        flex-start;
+
+    align-items:
+        flex-start;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    background-image:
+
+        linear-gradient(
+            #f4f1e8,
+            #f4f1e8
+        ),
+
+        url(
+            "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80"
+        );
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-attachment: fixed;
+}
+
+
+
+
+.ticket {
+
+    margin: 10px;
+
+    height: 35vh;
+
+    min-height: 230px;
+
+    width: 15%;
+
+    min-width: 220px;
+
+    background: #fffdf8;
+
+    border:
+        1px solid #ded9cd;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 20px
+        rgba(45, 43, 80, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.ticket:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(45, 43, 80, 0.18);
+}
+
+
+
+
+.taskColor {
+
+    height: 9%;
+
+    width: 100%;
+
+    cursor: pointer;
+}
+
+
+
+.ticketTaskContainer {
+
+    padding: 14px;
+
+    position: relative;
+
+    height: 91%;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.ticketTaskContainer p {
+
+    color: #35334b;
+
+    font-size: 0.98rem;
+
+    line-height: 1.5;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+
+
+
+.lockContainer {
+
+    position: absolute;
+
+    bottom: 10px;
+
+    right: 10px;
+
+    padding: 5px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease;
+}
+
+.lockContainer:hover {
+
+    background:
+        #eeeaf7;
+}
+
+.lockContainer svg {
+
+    color:
+        #55577f;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.lockContainer svg:hover {
+
+    transform:
+        scale(1.15);
+
+    color:
+        #d95d68;
+}
+
+
+
+
+.taskAdder {
+
+    height: 42vh;
+
+    width: 38vw;
+
+    min-width: 350px;
+
+    position: fixed;
+
+    top: 20vh;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    overflow: hidden;
+
+    background:
+        #fffdf8;
+
+    border:
+        1px solid #ded9cd;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(45, 43, 80, 0.25);
+
+    z-index: 100;
+}
+
+
+
+
+.taskText {
+
+    width: 80%;
+
+    height: 100%;
+
+    padding: 18px;
+
+    resize: none;
+
+    outline: none;
+
+    border: none;
+
+    background:
+        #fffdf8;
+
+    color:
+        #35334b;
+
+    font-family:
+        "Poppins",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size: 1.05rem;
+
+    font-weight: 500;
+}
+
+.taskText::placeholder {
+
+    color:
+        #9692a5;
+}
+
+.taskText:focus {
+
+    background:
+        #fffdf8;
+}
+
+
+
+
+.priotityColors2 {
+
+    width: 20%;
+
+    height: 100%;
+
+    padding: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content:
+        space-around;
+
+    align-items:
+        center;
+
+    background:
+        #eeecf6;
+}
+
+
+
+.color2 {
+
+    width: 80%;
+
+    height: 15%;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.color2:hover {
+
+    transform:
+        scale(1.08);
+
+    box-shadow:
+        0 5px 12px
+        rgba(45, 43, 80, 0.18);
+}
+
+
+
+
+.border {
+
+    border:
+        3px solid #fffdf8;
+
+    box-shadow:
+        0 0 0 3px #4b4e8a,
+        0 5px 12px
+        rgba(45, 43, 80, 0.18);
+}
+
+
+
+#pTag {
+
+    word-wrap:
+        break-word;
+
+    overflow-wrap:
+        break-word;
+}
+
+
+
+
+.hide {
+
+    display: none;
+}
+
+
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background:
+        #eeece5;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        #aaa8c9;
+
+    border-radius:
+        10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        #8584ae;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .ticket {
+        width: 28%;
+    }
+
+    .priotityColors {
+        width: 40%;
+    }
+
+    .options {
+        width: 15%;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    nav {
+
+        height: auto;
+
+        min-height: 80px;
+
+        padding: 12px 15px;
+
+        gap: 12px;
+    }
+
+    .logo {
+
+        font-size:
+            1.4rem;
+    }
+
+    .priotityColors {
+
+        width: 45%;
+    }
+
+    .options {
+
+        width: 22%;
+
+        min-width: 90px;
+    }
+
+    .ticket {
+
+        width: 42%;
+    }
+
+    .taskAdder {
+
+        width: 75vw;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    nav {
+
+        padding:
+            10px;
+    }
+
+    .logo {
+
+        font-size:
+            1.1rem;
+    }
+
+    .priotityColors {
+
+        width: 50%;
+    }
+
+    .options {
+
+        width: 30%;
+
+        min-width:
+            75px;
+    }
+
+    .taskContainer {
+
+        padding:
+            12px;
+    }
+
+    .ticket {
+
+        width: 100%;
+
+        min-width:
+            0;
+    }
+
+    .taskAdder {
+
+        width:
+            90vw;
+
+        min-width:
+            0;
+    }
+
+    .taskText {
+
+        width:
+            75%;
+    }
+
+    .priotityColors2 {
+
+        width:
+            25%;
+    }
+
+}
+
+.border {
+  border: 3px solid white;
+}
+
+#pTag {
+  word-wrap: break-word;
+}
+
+.hide {
+  display: none;
+}
